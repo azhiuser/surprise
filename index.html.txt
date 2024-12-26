@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сюрприз для тебя</title>
+    <style>
+        body {
+            font-family: "Comic Sans MS", sans-serif;
+            background: linear-gradient(45deg, #f0f, #0ff);
+            color: white;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 700px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+            border: 3px solid #ff00ff;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 5px #00ffff;
+        }
+        p {
+            font-size: 1.2em;
+            text-shadow: 1px 1px 3px #ffffff;
+        }
+        img {
+            max-width: 90%;
+            height: auto;
+            margin: 15px 0;
+            border: 3px solid #ff00ff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
+        }
+        audio {
+            margin-top: 20px;
+            border: 2px solid #00ffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 1em;
+            color: #00ffff;
+            text-shadow: 1px 1px 3px #ff00ff;
+        }
+        .glow {
+            animation: glow 1.5s infinite alternate;
+        }
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #00ffff;
+            }
+            to {
+                text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #ff00ff, 0 0 50px #ff00ff;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="glow">Сюрприз для тебя!</h1>
+        <p>Вспомни, как было круто в 2000-х! 🌌</p>
+        <img src="image1.jpg" alt="Милая картинка">
+        <img src="image2.jpg" alt="Еще одна милая картинка">
+        <p>Вот мое послание для тебя:</p>
+        <audio controls>
+            <source src="voice.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудио.
+        </audio>
+        <div class="footer">
+            Ты — моя звезда ✨ С любовью, от меня.
+        </div>
+    </div>
+</body>
+</html>
